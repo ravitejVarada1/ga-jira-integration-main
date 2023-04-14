@@ -17,4 +17,4 @@ jobs:
           JIRA_EMAIL: ${{secrets.JIRA_EMAIL}}
           TRIGGER_LABEL: jira
           JIRA_PROJECT_ID: RV
-          JIRA_ISSUE_NAME: Story
+          JIRA_ISSUE_NAME: #3 Story
