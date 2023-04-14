@@ -12,14 +12,14 @@ jobs:
       uses: actions/checkout@master
 
     - name: Login
-      uses: ravitejVarada1/ga-jira-integration-main-login@master
+      uses: ravitejVarada1/ga-jira-integration-main@master
       env:
         JIRA_BASE_URL: https://rvarada.atlassian.net/browse/RV
         JIRA_USER_EMAIL: ${{ secrets.JIRA_EMAIL }}
         JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
 
     - name: Create Jira issue on job failure
-      uses: ravitejVarada1/ga-jira-integration-main-create@master
+      uses: ravitejVarada1/ga-jira-integration-main@master
       with:
         project: Varada
         issuetype: Build
