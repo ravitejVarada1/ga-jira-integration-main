@@ -1,8 +1,9 @@
-name: Create JIRA issue
+
+name: CI
 
 on:
-  issues:
-    types: [labeled]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   createIssue:
