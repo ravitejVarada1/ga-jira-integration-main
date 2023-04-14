@@ -1,0 +1,19 @@
+name: Create JIRA issue
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  createIssue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          JIRA_API_HOST: ${{secrets.JIRA_API_HOST}}
+          JIRA_API_TOKEN: ${{secrets.JIRA_API_TOKEN}}
+          JIRA_EMAIL: ${{secrets.JIRA_EMAIL}}
+          TRIGGER_LABEL: jira
+          JIRA_PROJECT_ID: WTEST
+          JIRA_ISSUE_NAME: Story

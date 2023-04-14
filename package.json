@@ -1,0 +1,19 @@
+{
+  "name": "ga-jira-integraion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:getsentry/ga-jira-integration.git",
+  "author": "Vladan Paunovic <vladan.paunovic@sentry.io>",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "dev-start": "ncc run dist/index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "@actions/github": "^5.0.0",
+    "@vercel/ncc": "^0.31.1",
+    "jira.js": "^2.6.3",
+    "md-to-adf": "^0.6.4"
+  }
+}
