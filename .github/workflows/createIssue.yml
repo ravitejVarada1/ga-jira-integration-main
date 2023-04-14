@@ -14,7 +14,7 @@ jobs:
     - name: Login
       uses: atlassian/gajira-login@master
       env:
-        JIRA_BASE_URL: https://rvarada.atlassian.net/browse/RV-2
+        JIRA_BASE_URL: https://rvarada.atlassian.net/browse/RV
         JIRA_USER_EMAIL: ${{ secrets.JIRA_EMAIL }}
         JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
 
