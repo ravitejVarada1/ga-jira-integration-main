@@ -21,6 +21,6 @@ jobs:
     - name: Create Jira issue on job failure
       uses: atlassian/gajira-create@master
       with:
-        project: RV
+        project: Varada
         issuetype: Build
         summary: Build failed for ${{ github.repository }}
